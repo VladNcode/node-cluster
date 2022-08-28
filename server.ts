@@ -36,5 +36,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(helpers.randomNumber(3000, 8000), function get(this: { address: () => { port: number } }) {
-	console.log(`Server is listening on ${this.address().port}!`);
+	console.log(`Server is listening on ${this.address().port}`);
 });
