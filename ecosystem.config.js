@@ -14,5 +14,15 @@ module.exports = {
 				NODE_ENV: 'production',
 			},
 		},
+		{
+			name: 'Worker1',
+			script: './workers/fib-worker1.ts',
+			instances: 1,
+		},
+		{
+			name: 'Worker2',
+			script: './workers/fib-worker2.ts',
+			instances: 1,
+		},
 	],
 };
